@@ -53,8 +53,8 @@ describe('tests', () => {
 
   test('gets currencies data on date successfully', async() => {
     const data = {
-      'EUR': 9.332301238, 
-      'GBP': 7.742200883, 
+      'EUR': 0.9332301238,
+      'USD': 0.7742200883,
     };
     (axios.get as jest.Mock).mockResolvedValue({ data });
     const result = await getCurrenciesDataOnDate(['EUR', 'GBP'], yesterday)

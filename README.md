@@ -9,9 +9,11 @@ npm run start
 
 # Usage
 const response = await getCurrenciesData();
+
 console.log(response);
 
 const response = await exchange(10, 'USD', ['EUR', 'GBP'], '2024-11-10');
+
 console.log(response);
 
 ...
